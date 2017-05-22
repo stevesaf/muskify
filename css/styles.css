@@ -1,0 +1,23 @@
+.header-container {
+  text-align: center;
+}
+
+.search[type=text] {
+    width: 200px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 50%;
+}
+
+#newListName {
+  width: 25%;
+  margin: auto;
+}
+
+.headline {
+text-align: center;
+}
