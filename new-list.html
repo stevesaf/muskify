@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+      <html>
+        <head>
+          <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+
+          <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <!-- Latest compiled and minified CSS -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+          <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+          <title>Muskify</title>
+        </head>
+        <body>
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <!-- logo -->
+              <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">MUSKIFY</a>
+              </div>
+              <!-- menu items -->
+              <div>
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="browse.html">Browse</a></li>
+                  <li><a href="create-edit.html">Create/Edit</a></li>
+
+                  <!--dropdown menu-->
+                  <li class="dropdown">
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="header-container">
+            <div id="newListForm">
+
+            <form>
+            <div class="form-group new">
+              <label for="listNameOnForm"></label>
+              <input type="text" class="form-control" id="listNameOnForm"><br>
+              <textarea class="form-control" rows="5" id="comment" placeholder="enter list description"></textarea>
+              <input type="file" onchange="previewFile()"><br>
+              <img src="" height="200" alt="Image preview..."><br>
+              <button type="button" class="btn btn-success" id="submit-btn">Create New List</button>
+
+            </div>
+          </form>
+          </div>
+          <script src="js/scripts.js"></script>
+        </body>
+      </html>

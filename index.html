@@ -1,37 +1,250 @@
 <!DOCTYPE html>
       <html>
         <head>
+          <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
           <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
   <!-- Latest compiled and minified CSS -->
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-          <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
           <link href="css/styles.css" rel="stylesheet" type="text/css">
-          <script src="js/jquery-1.9.1.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
           <script src="js/scripts.js"></script>
           <title>Muskify</title>
         </head>
         <body>
-          
-          <div class="header-container">
 
-            <div class="headline">
-                <h3 class="col-sm-12" id="top-name">Welcome to MUSKIFY</h3>
-                <br>
-                <br>
-                <h4 class="col-sm-12" id="top-sub">What do you want to do today?</h4>
+          <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+              <!-- logo -->
+              <div class="navbar-header">
+                <a href="index.html" class="navbar-brand">MUSKIFY</a>
+                <button class="navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </div>
+
+              <!-- menu items -->
+              <div class="collapse navbar-collapse navHeaderCollapse">
+                <ul class="nav navbar-nav nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="browse.html">Browse</a></li>
+                  <li><a href="create-edit.html">Create/Edit</a></li>
+                </ul>
+              </div>
             </div>
-            <br>
-            <div class="index-buttons">
-              <a href="browse.html" type="button" role="button" class="btn btn-primary">Browse Lists</button><br>
-              </a>
-              <br>
-              <br>
-              <a href="create-edit.html" type="button" class="btn btn-success">Create/Edit List</button>
-              </a>
-            </div>
+          </nav>
+
+          <!--header--->
+          <header>
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-sm-7">
+                              <div class="header-content">
+                                  <div class="header-content-inner">
+                                      <h1>Muskify: The most accessible way to self study.</h1>
+                                      <a href="#download" class="btn btn-primary btn-xl page-scroll">Browse Lists</a>
+                                      <a href="#download" class="btn btn-success btn-xl page-scroll">Create/Edit List</a>
+
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-5">
+                              <div class="device-container">
+                                  <div class="device-mockup iphone6_plus portrait white">
+                                      <div class="device">
+                                          <div class="screen">
+                                              <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                              <img src="img/listexample2.png" class="img-responsive" alt="">
+                                          </div>
+                                          <div class="button">
+                                              <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </header>
+
+      <div class="wrapper_100 quote">
+        <div class="wrapper">
+          <div class="col-sm-12 quote_center">
+            <h3>They're just lists.</h3><br><br>
+            <p>Ever want to become, like, <em>really good</em> at something but don't know where to begin? The internet is full of resources. Muskify is a <b>free</b> curation tool that helps you follow a track to expertise. Whether you want to learn from user-generated and rated lists or create one sharing your expertise, Muskify makes it easy.</p>
+
+
+          </div>
         </div>
+      </div>
+
+      <section id="index-mid">
+        <div class="row text-center">
+          <br>
+          <br>
+          <br>
+
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row text-center">
+
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 col-xs-6 hero-feature">
+                <div class="thumbnail">
+                    <img src="http://placehold.it/800x500" alt="">
+                    <div class="caption">
+                        <h3>Feature Label</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p>
+                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+      </section>
 
         </body>
       </html>
