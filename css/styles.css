@@ -92,7 +92,7 @@ header .device-container .screen img {
 
 /*-----quote-----*/
 
-.wrapper_100.quote {
+.wrapper_100{
   z-index: 100;
   background: #fff;
   position: relative;
