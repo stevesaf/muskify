@@ -65,8 +65,16 @@ header .device-container .screen img {
     margin: 100px auto 0;
   }
 
+  header .device-container img {
+    height: 100%;
+    width: 100%;
+  }
+  .device-mockup>.device {
+    z-index: 0;
+  }
+
 }
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   header .header-content .header-content-inner h1 {
     font-size: 30px;
   }
@@ -84,8 +92,10 @@ header .device-container .screen img {
 
 /*-----quote-----*/
 
-.wrapper_100 .quote {
-
+.wrapper_100.quote {
+  z-index: 100;
+  background: #fff;
+  position: relative;
 }
 
 .wrapper_100 .wrapper {
@@ -117,10 +127,16 @@ height: 300px;
   font-size: 15px;
 }
 
+
+
+.row .text-center {
+  margin: auto;
+  text-align: center;
+}
+
 #index-mid {
 /*margin-top: 10%;*/
 border-top: 1px solid #e6e6e6;
-
 }
 
 
