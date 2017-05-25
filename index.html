@@ -1,6 +1,8 @@
 <!DOCTYPE html>
       <html>
         <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
           <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
           <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -13,8 +15,8 @@
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
           <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
           <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
-
-
+          <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+          <script src="https://use.fontawesome.com/e0b7729234.js"></script>
           <title>Muskify</title>
         </head>
         <body>
@@ -46,12 +48,12 @@
           <header>
             <div class="container">
                                     <div class="row">
-                          <div class="col-md-7 col-sm-6">
+                          <div class="col-sm-7">
                               <div class="header-content">
                                   <div class="header-content-inner">
                                       <h1>Muskify: The most accessible way to self study.</h1>
-                                      <a href="#download" class="btn btn-primary btn-xl page-scroll">Browse Lists</a>
-                                      <a href="#download" class="btn btn-success btn-xl page-scroll">Create/Edit List</a>
+                                      <a href="#index-mid" class="btn btn-primary btn-xl page-scroll">Browse Lists</a>
+                                      <a href="create-edit.html" class="btn btn-success btn-xl page-scroll">Create/Edit List</a>
 
                                   </div>
                               </div>
@@ -76,21 +78,25 @@
               </header>
 
       <div class="wrapper_100 quote">
-        <div class="wrapper">
+        <div class="row">
           <div class="col-sm-12 quote_center">
-            <h3>They're just lists.</h3><br><br>
-            <p>Ever want to become, like, <em>really good</em> at something but don't know where to begin? The internet is full of resources. Muskify is a <b>free</b> curation tool that helps you follow a track to expertise. Whether you want to learn from user-generated and rated lists or create one sharing your expertise, Muskify makes it easy.</p>
-
-
+            <h3>They're simply lists.</h3><br><br>
+            <p style="text-align: center;">Ever want to become, like, <em>really good</em> at something but don't know where to begin?<p>
+              The internet is full of resources...almost too many. Muskify is a <b>free</b> tool that helps you overcome decision paralysis and start your track to mastery. Easy to follow lists curated (and rated) by community members help you leverage the most useful tools on the internet for learning <em>anything</em>, and track progress along the way.</p>
           </div>
         </div>
       </div>
 
       <section id="index-mid">
+        <div id="searchBoxHome">
+          <input class="search" type="text" name="search" placeholder="Search.."><br>
+          <h5><a href="categories.html">or search by categories</a></h5>
+        </div>
+      </div>
+      <br>
+      <br>
+
         <div class="row text-center">
-          <br>
-          <br>
-          <br>
           <div class="col-md-1">
 
           </div>
@@ -98,10 +104,13 @@
                 <div class="thumbnail">
                     <img src="img/guitar.jpeg" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="featureTitle">Learn Guitar</h3>
+                        <p>My list will have you playing 50 songs in 6 months.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
+                          <i class="fa fa-star-o stars" aria-hidden="true">&nbsp;4.5</i>
+                          <i class="fa fa-user-o people" aria-hidden="true">&nbsp;5276</i>
+                          <i class="fa fa-commenting-o" aria-hidden="true">&nbsp;564</i>
+
                         </p>
                     </div>
                 </div>
@@ -110,49 +119,53 @@
                 <div class="thumbnail">
                     <img src="img/cantonese.jpeg" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h3 class="featureTitle">Conversational Cantonese</h3>
+                        <p>Cantonese learning resources are scarce. These are the best.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                          <i class="fa fa-star-o stars" aria-hidden="true">&nbsp;4.5</i>
+                          <i class="fa fa-user-o people" aria-hidden="true">&nbsp;5276</i>
+                          <i class="fa fa-commenting-o" aria-hidden="true">&nbsp;564</i>                        </p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-2 col-xs-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="img/frontend_logo.png" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
+                        <h3 class="featureTitle">Front-end Dev</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                          <i class="fa fa-star-o stars" aria-hidden="true">&nbsp;4.5</i>
+                          <i class="fa fa-user-o people" aria-hidden="true">&nbsp;5276</i>
+                          <i class="fa fa-commenting-o" aria-hidden="true">&nbsp;564</i>                        </p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-2 col-xs-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="img/Elon-Musk.jpg" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
+                        <h3 class="featureTitle">Learn like Elon</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                          <i class="fa fa-star-o stars" aria-hidden="true">&nbsp;4.5</i>
+                          <i class="fa fa-user-o people" aria-hidden="true">&nbsp;5276</i>
+                          <i class="fa fa-commenting-o" aria-hidden="true">&nbsp;564</i>                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-2 col-xs-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="img/node.jpg" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
+                        <h3 class="featureTitle">Node.JS</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                          <i class="fa fa-star-o stars" aria-hidden="true">&nbsp;4.5</i>
+                          <i class="fa fa-user-o people" aria-hidden="true">&nbsp;5276</i>
+                          <i class="fa fa-commenting-o" aria-hidden="true">&nbsp;564</i>                        </p>
                     </div>
                 </div>
             </div>
@@ -166,63 +179,68 @@
           </div>
             <div class="col-md-2 col-xs-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="img/data-science.jpeg" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
+                        <h3 class="featureTitle">Data Science</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                          <i class="fa fa-star-o stars" aria-hidden="true">&nbsp;4.5</i>
+                          <i class="fa fa-user-o people" aria-hidden="true">&nbsp;5276</i>
+                          <i class="fa fa-commenting-o" aria-hidden="true">&nbsp;564</i>                        </p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-2 col-xs-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="img/charlie-hunnam2.jpg" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
+                        <h3 class="featureTitle">Charlie Hunnam Body</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                          <i class="fa fa-star-o stars" aria-hidden="true">&nbsp;4.5</i>
+                          <i class="fa fa-user-o people" aria-hidden="true">&nbsp;5276</i>
+                          <i class="fa fa-commenting-o" aria-hidden="true">&nbsp;564</i>                        </p>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-2 col-xs-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="img/lucid-dreaming.jpg" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
+                        <h3 class="featureTitle">Lucid Dreaming</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                          <i class="fa fa-star-o stars" aria-hidden="true">&nbsp;4.5</i>
+                          <i class="fa fa-user-o people" aria-hidden="true">&nbsp;5276</i>
+                          <i class="fa fa-commenting-o" aria-hidden="true">&nbsp;564</i>                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-2 col-xs-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="img/public-speaking.jpg" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
+                        <h3 class="featureTitle">Public Speaking</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                          <i class="fa fa-star-o stars" aria-hidden="true">&nbsp;4.5</i>
+                          <i class="fa fa-user-o people" aria-hidden="true">&nbsp;5276</i>
+                          <i class="fa fa-commenting-o" aria-hidden="true">&nbsp;564</i>                        </p>
                     </div>
                 </div>
             </div>
             <div class="col-md-2 col-xs-6 hero-feature">
                 <div class="thumbnail">
-                    <img src="http://placehold.it/800x500" alt="">
+                    <img src="img/ethical-hacking.jpg" alt="">
                     <div class="caption">
-                        <h3>Feature Label</h3>
+                        <h3 class="featureTitle">Ethical Hacking</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <p>
-                            <a href="#" class="btn btn-primary">Buy Now!</a> <a href="#" class="btn btn-default">More Info</a>
-                        </p>
+                          <i class="fa fa-star-o stars" aria-hidden="true">&nbsp;4.5</i>
+                          <i class="fa fa-user-o people" aria-hidden="true">&nbsp;5276</i>
+                          <i class="fa fa-commenting-o" aria-hidden="true">&nbsp;564</i>                        </p>
                     </div>
                 </div>
             </div>
